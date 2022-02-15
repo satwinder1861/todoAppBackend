@@ -2,6 +2,7 @@ const express = require("express");
 const cors = require ("cors");
 const bodyParser = require ("body-parser");
 const { v4: uuid } = require('uuid');
+let port = process.env.PORT || 3000;
 var fakeTodos = [{
     id: 'ae06181d-92c2-4fed-a29d-fb53a6301eb9',
     text: 'Welcome',
@@ -73,4 +74,4 @@ app.delete('/todos/:id', (req, res) => {
     res.status(200).json(removedTodo);
 });
 
-app.listen(8080, () => console.log("Server listening on port 8080"));
+app.listen(port, () => console.log("Server listening on port 3000"));
