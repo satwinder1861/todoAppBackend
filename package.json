@@ -1,0 +1,26 @@
+{
+  "homepage":"http://satwinder1861.github.io/todoBackend",
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build",
+    "start": "nodemon index.js -exec babel-node -e js"
+  },
+  "author": "satwinder",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.2",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.16.7",
+    "@babel/core": "^7.16.7",
+    "@babel/preset-env": "^7.16.7",
+    "gh-pages": "^3.2.3",
+    "nodemon": "^2.0.15"
+  }
+}
